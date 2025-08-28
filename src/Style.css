@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@layer base {
+  :root {
+    --color-50: #fff5eb;
+    --color-100: #ffe0c2;
+    --color-200: #ffc599;
+    --color-300: #ffa966;
+    --color-400: #ff8c33;
+    --color-500: #ff7a00; /* main color */
+    --color-600: #e66d00;
+    --color-700: #cc6000;
+    --color-800: #b35300;
+    --color-900: #994600;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+@theme {
+  --color-50: var(--color-50);
+  --color-100: var(--color-100);
+  --color-200: var(--color-200);
+  --color-300: var(--color-300);
+  --color-400: var(--color-400);
+  --color-500: var(--color-500); /* main color */
+  --color-600: var(--color-600);
+  --color-700: var(--color-700);
+  --color-800: var(--color-800);
+  --color-900: var(--color-900);
+}

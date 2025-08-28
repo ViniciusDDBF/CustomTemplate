@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { abrir, fechar } from './store/slices/modal';
 import { incrementar, reduzir } from './store/slices/counter';
 import type { RootState } from './types';
+import Button from './components/Button';
+import ThemePicker from './components/ThemePicker';
 
 const App = () => {
   const modal = useSelector((state: RootState) => state.modal);
@@ -10,6 +12,10 @@ const App = () => {
 
   return (
     <div>
+      <ThemePicker />
+      <Button loading loaderType="spinner">
+        Vini
+      </Button>
       {modal && <h1>{counter}</h1>}
       <div>
         <h1 className="bg-black text-orange-400">VINI</h1>
