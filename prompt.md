@@ -371,4 +371,4 @@ For New Projects:
 Using my brand design system above, create a [landing page/dashboard/blog layout] for [specific purpose]. Focus on [specific goals]. Make sure to explain the color psychology behind your key decisions.
 
 For Refinements:
-"Following my brand system, improve this design by [specific request]. Maintain the color hierarchy and explain why you made each change."
+Following my brand system, improve this design by [specific request]. Maintain the color hierarchy and explain why you made each change.
